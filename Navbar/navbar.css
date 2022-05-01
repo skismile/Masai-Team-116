@@ -1,0 +1,23 @@
+*{
+    font-family:  sans-serif;
+}
+#nav{
+    height: 70px;
+    background-color: darkmagenta;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#name{
+    width: 40%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+#details{
+    width: 40%;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
