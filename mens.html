@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Navbar/navbar.css">
+    <style>
+        #container {
+            width: 60%;
+            height: 100px;
+            display: flex;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .head {
+            color: rgb(61, 60, 60);
+            text-decoration: line-through;
+
+        }
+
+        .head+h1 {
+            color: green;
+        }
+
+        #container>div>div {
+            display: flex;
+
+        }
+
+        #container>div>div>h1 {
+            margin-right: 10px;
+            margin-top: -5px;
+
+        }
+
+        p {
+            margin-top: -10px;
+            color: rgb(91, 90, 90);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="name"> REEBOK</div>
+        <div id="details">
+            <p>MAN</p>
+            <p>WOMAN</p>
+            <p>LOG IN</p>
+            <p>SIGN UP</p>
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61uDKijf7pL._UX679_.jpg" />
+            <h2>
+                Pause
+            </h2>
+            <P>
+                Men Cotton Long Sleeves Shrug
+            </P>
+            <div>
+                <h1>359</h1>
+                <h1 class="head">1499</h1>
+                <h1>-76%</h1>
+            </div>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61DnikvJPyL._UY741_.jpg" />
+            <h2>
+                JUBINATION
+            </h2>
+            <P>
+                Men Wool Sleeveless Sweater Pack Of 1
+            </P>
+            <div>
+                <h1>799</h1>
+                <h1 class="head">1499</h1>
+                <h1>-47%</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
