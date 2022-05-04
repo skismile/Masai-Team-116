@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1>MASAI</h1>
+    <form id="form">
+        <h3>Sign Up</h3>
+        <label for="">Full Name</label>
+        <br />
+        <input id="name" type="text" placeholder="Full name">
+        <br>
+        <label for="">Email Id</label>
+        <br />
+        <input id="email" type="text" placeholder="Email Id">
+        <br>
+        <label for="">Mobile No</label>
+        <br />
+        <input id="mobile" type="text" placeholder="Mobile No.">
+        <br>
+        <label for="">Password</label>
+        <br />
+        <input id="password" type="text" placeholder="Password">
+        <br>
+        <input type="submit" value="SIGN UP" />
+        <p>Already have an account?<span><a href="#">Sign In</a></span></p>
+    </form>
+</body>
+</html>
+
+<script>
+        document.querySelector("#form").addEventListener("submit", signupFunc)
+
+        var signupArray = JSON.parse(localStorage.getItem("signupData")) || []
+        
+        function signupFunc(){
+            event.preventDefault();
+
+            var signupobj = {
+
+                fullName : form.name.value,
+                email : form.email.value,
+                mblNo : form.mobile.value,
+                pwd : form.password.value,
+            }
+            signupArray.push(signupobj)
+    
+            localStorage.setItem("signupData",JSON.stringify(signupArray));
+        
+            form.name.value = "";
+            form.email.value = "";
+            form.mobile.value = "";
+            form.password.value = "";
+
+            //window.location.href = "signin.html";
+        }
+            
+            
+
+    
+</script>
