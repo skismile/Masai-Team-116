@@ -10,14 +10,18 @@
 }
 #name{
     width: 40%;
-    color: aliceblue;
+    color: white;
     display: flex;
     align-items: center;
     padding-left: 20px;
 }
 #details{
     width: 40%;
-    color: aliceblue;
+    color:  white;
     display: flex;
     justify-content: space-around;
+    margin-top:30px;
+}
+#details >p{
+    color: white;
 }
