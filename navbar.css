@@ -7,6 +7,14 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+#nav>div{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: auto;
+    margin-bottom: 30px;
 }
 #name{
     width: 40%;
@@ -23,5 +31,9 @@
     margin-top:30px;
 }
 #details >p{
+    color: white;
+}
+a{
+    text-decoration: none;
     color: white;
 }
